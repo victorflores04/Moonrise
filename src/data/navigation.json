@@ -1,0 +1,39 @@
+[
+	{
+		"title": "Home",
+		"href": "/",
+		"type": "link"
+	},
+	{
+		"title": "Services",
+		"href": "/services",
+		"type": "link",
+		"items": [
+			{
+				"title": "Service 1",
+				"href": "/service1",
+				"type": "link"
+			},
+			{
+				"title": "Service 2",
+				"href": "/service2",
+				"type": "link"
+			}
+		]
+	},
+	{
+		"title": "About",
+		"href": "/about",
+		"type": "link"
+	},
+	{
+		"title": "Blog",
+		"href": "/blog",
+		"type": "link"
+	},
+	{
+		"title": "Contacts",
+		"href": "/contact",
+		"type": "button"
+	}
+]

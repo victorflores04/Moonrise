@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+// - - - - - - - - - - - - - - - - - - - - - - - -
+// Core Tools
+// - - - - - - - - - - - - - - - - - - - - - - - -
+
+@import 'tools/px-to-rem';
+@import 'tools/font-size';
+@import 'tools/get-color-alpha';
+
+// - - - - - - - - - - - - - - - - - - - - - - - -
+// Variables
+// - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Breakpoints/layout
+$breakpoints: (
+  sm: 640px,
+  md: 1024px,
+  lg: 1440px,
+);
+
+$container-width: 1400px;
+
+$gutter: 16px;
+$gutter-sm: 32px;
+
+// - - - - - - - - - - - - - - - - - - - - - - - -
+// Typography
+// - - - - - - - - - - - - - - - - - - - - - - - -
+
+$font-family-base: 'Geist';
+$font-family-heading: 'Geist';
+
+$font-weight-base: 400;
+$font-weight-base-bold: 600;
+$font-weight-heading: 700;
+
+$font-style-base: 'normal';
+$font-style-heading: 'normal';
+
+$line-height-base: 1.5;
+$line-height-heading: 1.2;
+$line-height-high: 1.8;
+
+$text-transform-base: var(--text-transform-base);
+$text-transform-heading: 'uppercase';
+
+$letter-spacing-heading: normal;
+
+$font-size-scale-base: 1;
+$font-size-scale-heading: 1;
+
+$font-size-base: font-size(16px);
+$font-size-small: font-size(14px);
+$font-size-medium: font-size(18px);
+
+$font-size-headings: (
+  h1: 2.5rem,
+  h2: 2rem,
+  h3: 1.5rem,
+  h4: 1.25rem,
+  h5: 1rem,
+  h6: 0.875rem,
+);
+
+// - - - - - - - - - - - - - - - - - - - - - - - -
+// Colors
+// - - - - - - - - - - - - - - - - - - - - - - - -
+
+$colors: (
+  primary: rgba(35, 17, 153, 0.938),
+  background: #2A3941,
+  on-background: #fff,
+  link: #fff,
+  link-stroke: #fff,
+  link-stroke-hover: #FF530F,
+  link-hover: #5f5f5f7c,
+  white: #fff,
+  black: #000,
+  text: #fff,
+  text-pale: #ffff,
+  heading: #b46e6e85,
+  header-background: #4642,
+  header-link: #fff,
+  header-link-hover: #df9f9f,
+);
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - -
+// Other
+// - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Header
+$header-height: 48px;
+$header-height-sm: 80px;
+
+// Logo
+$logo-max-width: 100px;
+
+// Transition
+$transition-time: 150ms;
+$transition-base: $transition-time;
+$transition-all: all 150ms ease;
+
+// Buttons
+$button-border-radius: 0;
+
+// Inputs
+$input-border-width: 2px;
+$input-border-radius: 10px;
+$input-border: $input-border-width solid map-get($colors, 'input-border');
+$text-input-border: 1px solid transparent;
+$input-height: 56px;
+$input-horizontal-padding: 16px;
+$input-icon-width: 22px;
+$input-font-family: $font-family-base;
+$input-font-size: font-size(16px);
+$input-line-height: 1.5;
+
+// Divider
+$divider-size: 1px;
+$divider-style: solid;
+$divider-border: $divider-size $divider-style map-get($colors, 'divider');
+
+// - - - - - - - - - - - - - - - - - - - - - - - -
+// Imports
+// - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Tools
+@import 'tools/autofill-fix';
+@import 'tools/get-breakpoint';
+@import 'tools/get-color';
+@import 'tools/media-query';
+
+// Core
+@import 'core/generic';
+@import 'core/typography';
+
+// Fonts
+@import 'fonts/fonts';
+
+// Layout
+@import 'layout/container';
+@import 'layout/edge-mobile';
+@import 'layout/grid';
+@import 'layout/list';
+@import 'layout/wrapper';
+
+// Components
+@import 'components/body';
+@import 'components/header';
