@@ -68,13 +68,13 @@ $font-size-headings: (
 // - - - - - - - - - - - - - - - - - - - - - - - -
 
 $colors: (
-  primary: rgba(35, 17, 153, 0.938),
-  background: #2A3941,
+  primary: rgba(35, 17, 153),
+  background: #000,
   on-background: #fff,
   link: #fff,
   link-stroke: #fff,
-  link-stroke-hover: #FF530F,
-  link-hover: #5f5f5f7c,
+  link-stroke-hover: rgb(102, 51, 238),
+  link-hover: #fff,
   white: #fff,
   black: #000,
   text: #fff,
