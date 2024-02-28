@@ -1,0 +1,21 @@
+---
+import Video from "@/assets/video.mp4"
+---
+<section class="hero hero--video hero--move-top">
+  <div class="section-background">
+    <video playsinline autoplay muted loop class="section-background__video">
+      <source src={Video + "#1.75"} type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="section-background__overlay"></div>
+  </div>
+
+  <div class="hero__inner">
+    <div class="container wrapper">
+      <div  class="hero__content hero__content--center hero__content--extra-large">
+        <h1 class="hero__heading hero__heading--regular"></h1>
+        <p class="hero__text"></p>
+      </div>
+    </div>
+  </div>
+</section>

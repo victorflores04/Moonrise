@@ -1,12 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import navigations from '../data/navigation.json';
-import '../styles/theme.scss';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Hero from "@/sections/Hero.astro"
+import navigations from '@/data/navigation.json';
+import '@/styles/theme.scss';
 ---
 
 <Layout title="Welcome to Astro.">
   <Header navItems={navigations} logo="test.png"/>
 	<main>
+    <Hero />
 	</main>
 </Layout>
