@@ -149,3 +149,5 @@ $divider-border: $divider-size $divider-style map-get($colors, 'divider');
 // Components
 @import 'components/body';
 @import 'components/header';
+@import 'components/hero';
+@import 'components/section-background';
