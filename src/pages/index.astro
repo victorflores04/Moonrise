@@ -4,11 +4,13 @@ import Header from '@/components/Header.astro';
 import Hero from "@/sections/Hero.astro"
 import navigations from '@/data/navigation.json';
 import '@/styles/theme.scss';
+import Carousel from '@/sections/Carousel.astro';
 ---
 
 <Layout title="Welcome to Astro.">
   <Header navItems={navigations} logo="test.png"/>
 	<main>
     <Hero />
+    <Carousel />
 	</main>
 </Layout>

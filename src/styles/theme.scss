@@ -19,7 +19,7 @@ $breakpoints: (
   lg: 1440px,
 );
 
-$container-width: 1400px;
+$container-width: 1440px;
 
 $gutter: 16px;
 $gutter-sm: 32px;
@@ -35,15 +35,15 @@ $font-weight-base: 400;
 $font-weight-base-bold: 600;
 $font-weight-heading: 700;
 
-$font-style-base: 'normal';
-$font-style-heading: 'normal';
+$font-style-base: normal;
+$font-style-heading: normal;
 
 $line-height-base: 1.5;
 $line-height-heading: 1.2;
 $line-height-high: 1.8;
 
-$text-transform-base: var(--text-transform-base);
-$text-transform-heading: 'uppercase';
+$text-transform-base: none;
+$text-transform-heading: uppercase;
 
 $letter-spacing-heading: normal;
 
@@ -79,9 +79,9 @@ $colors: (
   black: #000,
   text: #fff,
   text-pale: #ffff,
-  heading: #b46e6e85,
+  heading: #ffff,
   header-background: #4642,
-  header-link: #fff,
+  header-link: #000,
   header-link-hover: #df9f9f,
 );
 
@@ -148,6 +148,8 @@ $divider-border: $divider-size $divider-style map-get($colors, 'divider');
 
 // Components
 @import 'components/body';
+@import 'components/carousel';
 @import 'components/header';
 @import 'components/hero';
 @import 'components/section-background';
+@import 'components/embla';

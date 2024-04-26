@@ -1,0 +1,9 @@
+.carousel {
+  &__header {
+    margin-bottom: 20px;
+
+    @include media-query(sm) {
+      margin-bottom: 30px;
+    }
+  }
+}

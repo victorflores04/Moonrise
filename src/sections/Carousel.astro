@@ -1,0 +1,41 @@
+---
+import EmblaCarousel from '@/components/carousel/carousel.jsx';
+
+const OPTIONS = { loop: true }
+const SLIDES = [
+  {
+    url: 'https://res.cloudinary.com/chrostyburguer/image/upload/v1714162703/chris-osmond-q9GnP8x-yEs-unsplash_f2z57t.jpg',
+    alt: 'Woman ready to catch some waves'
+  },
+  {
+    url: 'https://res.cloudinary.com/chrostyburguer/image/upload/v1714162702/nick-fewings-XqOBKnxDSfE-unsplash_wmvejy.jpg',
+    alt: 'Lifeguard stand overlooking the beach'
+  },
+  {
+    url: 'https://res.cloudinary.com/chrostyburguer/image/upload/v1714162702/filipp-nekhaev-Ycnt8BKlMtY-unsplash_w7ob5r.jpg',
+    alt: 'Girl standing on the sand with her surfboard'
+  },
+  {
+    url: 'https://res.cloudinary.com/chrostyburguer/image/upload/v1714162700/surfing-croyde-bay-tumjr5fikdg-unsplash_r3upxx.jpg',
+    alt: 'Surfer riding the barrel of the wave'
+  },
+  {
+    url: 'https://res.cloudinary.com/chrostyburguer/image/upload/v1714162700/brandon-compagne-5__FobjBei8-unsplash_dtbin2.jpg',
+    alt: 'Group of surfers sharing the tube of the wave'
+  }
+]
+---
+
+<section class="carousel carousel--video carousel--move-top">
+  <div class="wrapper">
+    <div class="carousel__header">
+      <div class="carousel__content carousel__content--center">
+        <h1 class="carousel__heading carousel__heading--regular">Making Waves</h1>
+      </div>
+    </div>
+
+    <div class="carousel__inner">
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} client:load/>
+    </div>
+  </div>
+</section>
