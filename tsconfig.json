@@ -1,10 +1,10 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "/home/inmobitec/react/Moonrise",
+    "baseUrl": "./",
     "paths": {
       "@/*": [
-        "./src/*"
+        "src/*"
       ]
     },
     "jsx": "react-jsx",
